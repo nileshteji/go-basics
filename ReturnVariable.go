@@ -4,11 +4,8 @@ import "fmt"
 
 func main() {
 
-	fmt.Println(nilesh())
-	//nilesh121()
-
-}
-
-func nilesh() int {
-	return 1 + 2
+	cards := []string{"Nilesh", "teji", "Taheem"}
+	for i := 0; i < len(cards); i++ {
+		fmt.Println(cards[i])
+	}
 }
