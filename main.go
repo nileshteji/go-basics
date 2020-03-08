@@ -5,9 +5,10 @@ import "fmt"
 func main() {
 
 	fmt.Println(nilesh())
+	//nilesh121()
 
 }
 
-func nilesh() string {
-	return "Nilesh Teji "
+func nilesh() int {
+	return 1 + 2
 }
