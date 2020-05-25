@@ -7,7 +7,6 @@ type deck []string
 func main(){
 
 cards := newDeck()
-//fmt.Println(cards.hand(3))
 fmt.Println(cards.toString())
 
 
@@ -29,7 +28,7 @@ return d[:variable],d[variable:]
 func newDeck() deck {
 
 
-cardSuites := deck{"Spades","Hearts","Diamonds",}
+cardSuites := deck{"Spades","Hearts","Diamonds","Leaves"}
 cardValues := deck{"One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Jacks","Queen","King"}
 cards := deck{}
 
