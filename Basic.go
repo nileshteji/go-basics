@@ -15,6 +15,8 @@ fmt.Println(nileshteji1)
 
 //Dynamic Declarition this includes the Declarition and Assignment
  nilesh  := 1+2;
+ // this will also return a compile time a exception
+ //nilesh ="teji"
 fmt.Println(nilesh)
 
 
