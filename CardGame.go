@@ -6,6 +6,21 @@ func main(){
 
 newDeck()
 
+
+
+
+
+
+}
+
+func (d deck) hand(variable int) deck{
+handDeck := deck{};
+for i:=0;i< int;i++
+{
+  handDeck=append(handDeck,d[i])
+}
+return handDeck
+
 }
 
 func newDeck() {

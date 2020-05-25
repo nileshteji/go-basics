@@ -18,6 +18,10 @@ cards.print()
 }
 
 
+
+
+
+
 // this means any variable of type deck can access this method
 func (d deck) print()  {
 
