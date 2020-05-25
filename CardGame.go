@@ -1,11 +1,14 @@
 package main
-import "fmt"
+import ("fmt"
+  "strings"
+)
 type deck []string
 
 func main(){
 
 cards := newDeck()
-fmt.Println(cards.hand(3))
+//fmt.Println(cards.hand(3))
+fmt.Println(cards.toString())
 
 
 
@@ -13,6 +16,9 @@ fmt.Println(cards.hand(3))
 
 
 
+}
+func (d deck) toString() string {
+  return strings.Join(d," ")
 }
 
 
