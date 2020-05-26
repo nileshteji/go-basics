@@ -10,14 +10,17 @@ type deck []string
 func main() {
 	cards := newDeck()
 	fmt.Println(cards.toByte())
+
 }
 
 func (d deck) toByte() []byte {
 	return []byte(strings.Join(d, " "))
 }
+
 func (d deck) hand(variable int) (deck, deck) {
 	return d[:variable], d[variable:]
 }
+
 
 func newDeck() deck {
 
