@@ -43,7 +43,7 @@ func (d deck) hand(variable int) (deck, deck) {
 
 func newDeck() deck {
 
-	cardSuites := deck{"Spades", "Hearts", "Diamonds", "Leaves"}
+	cardSuites := deck{"Spades", "Hearts", "Diamonds"}
 	cardValues := deck{"One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jacks", "Queen", "King"}
 	cards := deck{}
 

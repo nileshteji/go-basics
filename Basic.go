@@ -1,11 +1,10 @@
-package nilesh1
+package main
 
 import "fmt"
 
 func main() {
 
 	// this will give a compile time exception
-	var nileshteji string = 1 + 2
 
 	var nileshteji1 string = "nilesh"
 	fmt.Println(nileshteji1)
