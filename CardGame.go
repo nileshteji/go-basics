@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math/rand"
 	"strings"
 )
 
@@ -12,6 +13,17 @@ func main() {
 	fmt.Println(cards.toByte())
 
 }
+func (d deck) writeFile() {
+
+}
+func (d deck) shuffle() {
+	for index := range d {
+		newPosition := rand.Intn(len(d) - 1)
+		//swapping is sick in golang
+		d[newPosition], d[index] = d[index], d[newPosition]
+	}
+
+}
 
 func (d deck) toByte() []byte {
 	return []byte(strings.Join(d, " "))
@@ -20,7 +32,6 @@ func (d deck) toByte() []byte {
 func (d deck) hand(variable int) (deck, deck) {
 	return d[:variable], d[variable:]
 }
-
 
 func newDeck() deck {
 
