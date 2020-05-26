@@ -23,16 +23,6 @@ func (d deck) shuffle() {
 
 }
 
-//io/ioutil
-func (d deck) writeFile() string {
-
-}
-
-//io/ioutil
-func (d deck) readFile(filename string) string {
-
-}
-
 func (d deck) toByte() []byte {
 	return []byte(strings.Join(d, " "))
 }
@@ -43,7 +33,7 @@ func (d deck) hand(variable int) (deck, deck) {
 
 func newDeck() deck {
 
-	cardSuites := deck{"Spades", "Hearts", "Diamonds"}
+	cardSuites := deck{"Spades", "Hearts", "Diamonds", "Leaves"}
 	cardValues := deck{"One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jacks", "Queen", "King"}
 	cards := deck{}
 
