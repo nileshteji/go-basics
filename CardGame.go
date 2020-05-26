@@ -13,9 +13,8 @@ func main() {
 	fmt.Println(cards.toByte())
 
 }
-func (d deck) writeFile() {
 
-}
+
 func (d deck) shuffle() {
 	for index := range d {
 		newPosition := rand.Intn(len(d) - 1)
@@ -25,13 +24,30 @@ func (d deck) shuffle() {
 
 }
 
+
+//io/ioutil
+func (d deck) writeFile() string  {
+
+}
+//io/ioutil
+func (d deck) readFile(filename string) string {
+
+}
+
 func (d deck) toByte() []byte {
 	return []byte(strings.Join(d, " "))
 }
 
+
+
+
+
 func (d deck) hand(variable int) (deck, deck) {
 	return d[:variable], d[variable:]
 }
+
+
+
 
 func newDeck() deck {
 
