@@ -6,6 +6,6 @@ import "testing"
 func TestNewDeck(t *testing.T) {
 	d := newDeck()
 	if len(d) != 52 {
-		t.Errorf("The Length is not valid ", len(d))
+		t.Errorf("The Length is not valid %v", len(d))
 	}
 }
