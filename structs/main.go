@@ -34,8 +34,7 @@ func main() {
 
 }
 
-// & operator working : give me the memory address of the value this variable is pointing at
-// whenever we see  * before a type then it is not a operator (Desciption)
+// whenever we see  * before a type(struct) then it is not a operator like a pointer it is a ->(Desciption)
 
 func (pointer *card) print() {
 	(*pointer).suit = "Nilesh"
