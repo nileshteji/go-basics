@@ -21,10 +21,13 @@ func main() {
 		// this automatically creates a new routine which will run in the background of the main thread
 		go checkLink(value, cha)
 	}
-	for {
+	for l := range cha {
 
 		time.Sleep(5 * time.Second)
-		go checkLink(<-cha, cha)
+		go func(link string) {
+			time.Sleep(5 * time.Second)
+			checkLink(link, cha)
+		}(l)
 
 	}
 
