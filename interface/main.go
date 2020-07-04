@@ -8,8 +8,10 @@ type bot interface {
 	// this need to be always a reciver function
 	getGreeting() string
 }
-type englishBot struct{}
-type spanishbot struct{}
+type englishBot struct {
+}
+type spanishbot struct {
+}
 
 func main() {
 
@@ -25,10 +27,10 @@ func printGreeting(b bot) {
 }
 
 // intterfaces are mainly used when we want reuse one function again again which is  same for 2 or more types of struct
-func (englishBot) getGreeting() string {
+func (eng englishBot) getGreeting() string {
 	return "Hi Go!"
 }
 
-func (spanishbot) getGreeting() string {
+func (spanish spanishbot) getGreeting() string {
 	return "Hola"
 }

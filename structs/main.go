@@ -1,10 +1,13 @@
-package structures
+package main
 
 import "fmt"
 
 type card struct {
 	suit  string
 	value string
+}
+type nilesh interface {
+	print()
 }
 
 /* So what actually we are doing here is
@@ -30,7 +33,8 @@ func main() {
 	nileshCard := card{"Spades", "value"}
 	nileshPointer := &nileshCard
 	nileshPointer.print()
-	fmt.Println((*nileshPointer).suit)
+
+	fmt.Println((nileshPointer).suit)
 
 }
 

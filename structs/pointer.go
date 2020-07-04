@@ -34,5 +34,5 @@ func (a slice) update() {
 }
 
 func (pointer *person) print() {
-	(*pointer).firstName = "Balu"
+	(pointer).firstName = "Balu"
 }
