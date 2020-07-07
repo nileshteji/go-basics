@@ -1,4 +1,4 @@
-package nilesh2
+package main
 
 import "fmt"
 
