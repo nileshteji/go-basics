@@ -9,10 +9,13 @@ import (
 type deck []string
 
 func main() {
+	
 	cards := newDeck()
 	fmt.Println(cards.toByte())
 
 }
+
+
 
 func (d deck) shuffle() {
 	for index := range d {
