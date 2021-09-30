@@ -12,6 +12,7 @@ func main() {
 	colors["mrinank"] = "kumar"
 	colors["vineet"] = "kumar"
 	colors["savita"] = "taheem"
+	colors["Ram"] = "Ram"
 
 	delete(colors, "nilesh")
 
