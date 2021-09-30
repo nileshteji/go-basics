@@ -6,7 +6,7 @@ func main() {
 
 	// this will give a compile time exception
 
-	var nileshteji1 string = "nilesh"
+	var nileshteji1 string = "nilesh teji"
 	fmt.Println(nileshteji1)
 
 	//Dynamic Declarition this includes the Declarition and Assignment
